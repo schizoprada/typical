@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "typical"
+dynamic = ["version"]
+description = "advanced typing"
+dependencies = [
+]
+
+[tool.hatch.version]
+path = "src/typical/__init__.py"
