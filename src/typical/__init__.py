@@ -22,3 +22,8 @@ from .utils import (
     literal, literally,
     extract, ispredicate
 )
+
+from .primitives import (
+    Sentinel, UNSET, MISSING,
+    Descriptor, descr,
+)
