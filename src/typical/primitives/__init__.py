@@ -1,5 +1,6 @@
 from .sentinels import (
-    Sentinel, UNSET, MISSING
+    Sentinel, Unset, Missing, NotApplicable,
+    UNSET, MISSING, NOTAPPLICABLE, NA
 )
 from .descriptor import (
     Descriptor, descr

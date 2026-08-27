@@ -43,5 +43,11 @@ class Sentinel:
         return self
 
 
-MISSING = Sentinel('MISSING')
-UNSET = Sentinel('UNSET')
+class Unset(Sentinel): pass
+class Missing(Sentinel): pass
+class NotApplicable(Sentinel): pass
+
+UNSET = Unset('UNSET')
+MISSING = Missing('MISSING')
+NOTAPPLICABLE = NotApplicable('NOTAPPLICABLE')
+NA = NOTAPPLICABLE
